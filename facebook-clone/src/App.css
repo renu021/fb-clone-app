@@ -1,0 +1,25 @@
+
+.search-box{
+    background-color: #eef2f5;
+    border: none;
+    }
+
+.search-container{
+    border-color: transparent;
+    background-color: #f1f2f6;
+}
+
+
+html{
+    background-color: #f1f2f6;
+   
+}    
+
+body{
+    background-color: transparent;
+}
+
+.bg-white{
+    background-color: #fff;
+
+}
