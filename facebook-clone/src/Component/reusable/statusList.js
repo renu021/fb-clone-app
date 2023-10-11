@@ -1,12 +1,34 @@
 import React from 'react'
+import {ImagesList} from '../../utils/index'
+import Status from './Status'
 
-export const statusList = (props) => {
+export const StatusList = (props) => {
   return (
     <div className="content-status d-flex" >
-        <img 
-        src="https://infoinspired.com/wp-content/uploads/2017/07/20-e1499523580946.jpg" 
-        alt="status" 
-        name="renu" />
+      <Status imgUrl={ImagesList[0].download_url} 
+      profileUrl = "https://i.pinimg.com/1200x/d0/4b/1f/d04b1f2ed3ca8ad4a302fbe9f4f5a875.jpg"
+      name="Renu"
+      />
+
+      <Status imgUrl={ImagesList[0].download_url} 
+      profileUrl = "https://i.pinimg.com/1200x/d0/4b/1f/d04b1f2ed3ca8ad4a302fbe9f4f5a875.jpg"
+      name="Renu"
+      />
+
+      <Status imgUrl={ImagesList[0].download_url} 
+      profileUrl = "https://i.pinimg.com/1200x/d0/4b/1f/d04b1f2ed3ca8ad4a302fbe9f4f5a875.jpg"
+      name="Renu"
+      />
+
+      <Status imgUrl={ImagesList[0].download_url} 
+      profileUrl = "https://i.pinimg.com/1200x/d0/4b/1f/d04b1f2ed3ca8ad4a302fbe9f4f5a875.jpg"
+      name="Renu"
+      />
+
+      <Status imgUrl={ImagesList[0].download_url} 
+      profileUrl = "https://i.pinimg.com/1200x/d0/4b/1f/d04b1f2ed3ca8ad4a302fbe9f4f5a875.jpg"
+      name="Renu"
+      />
     </div>
   )
 }

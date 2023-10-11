@@ -20,6 +20,10 @@ body{
 
 }
 
+.br-10{
+    border-radius: 10px;
+}
+
 .bg-white{
     background-color: #fff;
 }
@@ -77,4 +81,44 @@ body{
 
 .content-l-menu{
     margin-top:40px
+}
+
+.status{
+    position: relative;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+}
+
+.status{
+
+}
+
+.status-profile{
+ position:relative;
+ bottom: 8em;
+ right: 11em;
+ border: 3px solid #01aef1;
+ border-radius: 30px;
+}
+
+.content-status{
+    height: 350px;
+}
+
+.status > .name{
+    position: relative;
+    color: #fff;
+    height: fit-content;
+    width: fit-content;
+    bottom: 3em;
+    left: 1em;
+}
+
+.create-post{
+    color: gray;
+}
+
+.create-post .search-box{
+
 }
