@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@1&family=Montserrat:ital,wght@1,300&family=Mooli&family=Outfit:wght@300;400;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,600;1,700&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&family=Roboto+Flex:opsz@8..144&family=Roboto:ital,wght@0,500;1,300;1,400;1,700&display=swap');
 
+*{
+    font-family: 'Roboto Flex', sans-serif;
+
+}
 .search-box{
     background-color: #eef2f5;
     border: none;
@@ -20,17 +25,19 @@ body{
 
 }
 
-.br-10{
-    border-radius: 10px;
-}
 
 .bg-white{
     background-color: #fff;
 }
 
 .br-20{
-    border-radius: 20px;
+    border-radius: 20px !important;
 }
+
+.br-10{
+    border-radius: 10px !important;
+}
+
 
 .menu{
     color: gray;
@@ -117,8 +124,28 @@ body{
 
 .create-post{
     color: gray;
+    padding: 30px 10px;
 }
 
 .create-post .search-box{
+    border-color: transparent;
+    background-color: #f1f2f6;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 10px !important;
 
+}
+
+.post-icon > svg {
+    margin: 10px;
+    font-size: 20px;
+
+}
+
+.color-gray{
+    color: gray;
+}
+
+.br-30{
+    border-radius: 30px!important;
 }

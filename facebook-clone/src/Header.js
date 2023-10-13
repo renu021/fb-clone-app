@@ -2,6 +2,7 @@ import React from 'react'
 import fb from './Assest/fb.png'
 import './App.css'
 import 'font-awesome/css/font-awesome.min.css';
+import  {useSelector}  from 'react-redux';
 
 //importing icons
 import {BsSearch, BsHouseDoor, BsFlag, BsCollectionPlay, BsShopWindow, BsPeople, BsPersonCircle, BsMessenger, BsBell, BsPower} from 'react-icons/bs'
@@ -9,6 +10,7 @@ import {AiOutlinePlus} from "react-icons/ai"
 
 
 export default function Header() {
+  const user = useSelector((state) => state.user.value)
   return (
     
     <div className=" p-1 d-flex bg-white justify-content-between">
@@ -49,7 +51,7 @@ export default function Header() {
           <div>
               <BsPersonCircle/>
             </div>
-            <span className="username ms-1" >Renu's chat-box</span>
+            <span className="username ms-1" >{user.displayName}</span>
             <div>
               <AiOutlinePlus/>
             </div>
