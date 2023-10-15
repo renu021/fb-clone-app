@@ -1,10 +1,10 @@
 import React from 'react'
-import { BsHouseDoor, BsFlag, BsCollectionPlay, BsShopWindow, BsMessenger} from 'react-icons/bs'
+import { BsHouseDoor, BsFlag, BsCollectionPlay, BsShopWindow} from 'react-icons/bs'
 import {AiOutlinePlusSquare} from "react-icons/ai"
 import {TbBrandMessenger} from 'react-icons/tb'
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux';
 
-function menu() {
+export default function Menu() {
 const user = useSelector((state) => state.user.value)
 
   return (
@@ -50,4 +50,3 @@ const user = useSelector((state) => state.user.value)
   )
 }
 
-export default menu

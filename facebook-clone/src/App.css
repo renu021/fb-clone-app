@@ -2,12 +2,12 @@
 
 *{
     font-family: 'Roboto Flex', sans-serif;
-
 }
+
 .search-box{
     background-color: #eef2f5;
     border: none;
-    }
+}
 
 .search-container{
     border-color: transparent;
@@ -17,12 +17,11 @@
 
  html{
     background-color: #f1f2f6 !important;
-   
 }     
+
 
 body{
     background-color: transparent !important;
-
 }
 
 
@@ -75,7 +74,7 @@ body{
 }
 
 .content-left{
- padding: 15px;
+   padding: 15px;
 }
 
 .content-left-svg{
@@ -83,7 +82,6 @@ body{
     font-size: 25px;
     margin-right: 15px;
     margin-left: 5px;
-    
 }
 
 .content-l-menu{
@@ -97,9 +95,6 @@ body{
     width: fit-content;
 }
 
-.status{
-
-}
 
 .status-profile{
  position:relative;
@@ -133,13 +128,11 @@ body{
     border-radius: 20px;
     padding: 10px;
     margin-left: 10px !important;
-
 }
 
 .post-icon > svg {
     margin: 10px;
     font-size: 20px;
-
 }
 
 .color-gray{
