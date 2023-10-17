@@ -20,7 +20,7 @@ const handleLogin = () => {
   return (
     <div className="text-center p-5" >
       <div>
-        <img src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/07/facebook-welcome-message-1024x768.png" 
+        <img src="https://img.freepik.com/premium-vector/voronezh-russia-january-11-2020-facebook-logo-square-icon-with-shadow_444390-8973.jpg" 
         alt="fb-logo"
         width={400} 
         height={400}
