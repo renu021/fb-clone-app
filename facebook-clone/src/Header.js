@@ -6,14 +6,22 @@ import  {useSelector}  from 'react-redux';
 
 //importing icons
 import {BsSearch, BsHouseDoor, BsFlag, BsCollectionPlay, BsShopWindow, BsPeople, BsPersonCircle, BsMessenger, BsBell, BsPower} from 'react-icons/bs'
-import {AiOutlinePlus} from "react-icons/ai"
+import {AiOutlinePlus} from "react-icons/ai";
+
+import {Link} from 'react-router-dom'
+
+
 
 
 export default function Header() {
   const user = useSelector((state) => state.user.value)
+
+
+ 
   return (
     
     <div className=" p-1 d-flex bg-white justify-content-between">
+    
       <div className="d-flex align-items-center">
         <img 
             src={fb} 
@@ -26,11 +34,17 @@ export default function Header() {
           <BsSearch className="ms-1 me-1" />
           <input type="search" placeholder="search on facebook" className="search-box mx-0 " />
         </div>
-
+      </div>
+      
+      <div>
         <div className="d-flex menu cursor-pointer">
+
             <div className="active">
+              <Link to="/Dashboard">
               <BsHouseDoor/>
+              </Link>
             </div>
+
             <div>
             <BsFlag/>
             </div>
@@ -55,12 +69,19 @@ export default function Header() {
             <div>
               <AiOutlinePlus/>
             </div>
+
             <div>
-              <BsMessenger/>
+              <Link to="/Msg">
+              <BsMessenger />
+              </Link>
             </div>
-            <div>
-              <BsBell/>
-            </div>
+           
+           <div>
+              <Link to="/Notify">
+              <BsBell /> 
+              </Link>
+           </div>
+            
             <div  className="cursor-poineter" >
               <button type="button" className='btn bg-white'  title="Logout" >
                 <BsPower/>
@@ -71,4 +92,11 @@ export default function Header() {
     </div>
   )
 }
+
+
+
+
+
+
+
 

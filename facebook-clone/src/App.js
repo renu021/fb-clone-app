@@ -1,26 +1,51 @@
 
 import './App.css';
-import Dashboard from "./Component/Dashboard"
 import Login from "./Component/Login"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import  {useSelector}  from 'react-redux';
+import Dashboard from './Component/Dashboard';
+
+
+
+import Notify from './Notify'
+import Msg from './Msg'; 
+import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
-  const user = useSelector((state) => state.user.value)
-
-  // user is a variable contains "truthy value" in this case it should be "string value"
-  // acconding to my ternary operator condition
-  // if anyone give string value in user variable they will navigate to "dashboard page".
-  // if user variable contain falsy value like empty string. when people didn't give any string value they will be navigated to "login page" 
+  const user = useSelector((state) => state.user.value) 
   
 
   return (
     <div>
-    {user ? <Dashboard /> : <Login />}
+   {/* {user ? <Dashboard /> : <Login />} */}
+       <>
+      <Routes>
+      {user ? (
+          <Route path="/" element={<Dashboard />} />
+        ) : (
+          <Route path="/" element={<Login />} />
+        )}
+        <Route path="/Dashboard" element={<Dashboard/>} />
+        <Route path="/Msg" element={<Msg />} />
+        <Route path="/Notify" element={<Notify />} />
+      </Routes>
+      </> 
       
     </div>
   );
 }
 
-export default App;
+ export default App;
+
+
+
+
+
+
+
+
+
+
+
+
