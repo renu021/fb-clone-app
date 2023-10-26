@@ -4,10 +4,12 @@ import Notification from './Component/reusable/Notification'
 import Header from './Header'
 
 
+
 const Notify = () => {
   return (
     <div>
         <Header />
+       
         <Notification />
     </div>
   )

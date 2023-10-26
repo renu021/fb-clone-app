@@ -4,6 +4,7 @@ import Login from "./Component/Login"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import  {useSelector}  from 'react-redux';
 import Dashboard from './Component/Dashboard';
+import Video from './Videopage'
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Login />} />
         )}
         <Route path="/Dashboard" element={<Dashboard/>} />
+        <Route path="/Videopage" element={<Video/>} />
         <Route path="/Msg" element={<Msg />} />
         <Route path="/Notify" element={<Notify />} />
       </Routes>

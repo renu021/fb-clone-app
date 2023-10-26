@@ -193,3 +193,42 @@ body{
 .yellow{
     color: rgb(100, 100, 93);
 }
+
+
+/* new changes */
+
+.Notify-head ,.Msg-head, .video-page{
+    background-color:#01aef1;
+    height: 60px;
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.notify-head {
+    margin-top: 5px;
+}
+
+.msg-head{
+    font-size: 2rem;
+}
+
+
+.side-menu-msg{
+    margin-top: 60px;
+    color: black;
+    left : 0;
+    
+}
+
+.chat{
+    margin-top: 90px;
+}
+
+
+.video-container{
+    margin-left: 35%;
+  
+}

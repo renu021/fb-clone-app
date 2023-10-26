@@ -49,7 +49,10 @@ export default function Header() {
             <BsFlag/>
             </div>
             <div>
-            <BsCollectionPlay/>
+              <Link to="/Videopage">
+              <BsCollectionPlay/>
+              </Link>
+            
             </div>
             <div>
               <BsShopWindow/>
